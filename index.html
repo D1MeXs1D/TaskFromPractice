@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>My_task</title>
+  
+</head>
+<body>
+    <header>  
+        <div class="container">
+            <div class="logo">
+                <img src="./img/monik.png" alt="логотип">
+            </div>    
+        
+            <nav>
+                <ul>    
+                    <li class="contact">Контакты</li>
+                    <li class="faq"><a href="#faqBlock">Как это работает</a></li>
+                    <li class="testYourself"> <a href="#testYourselfBlock">Проверь себя</a> </li>
+                    <li class="lightAndDarkTheme"><img src="./img/moon.png" alt="moon"></li>
+                </ul>
+            </nav>      
+        </div>
+
+        <div class="popUp">
+
+            <div class="feedbackNoActive">
+                <!-- добавить иконки телеграмма и номер телефона -->
+                <a href="https://t.me/Ded_Pihhto">
+                    <img src="./icons/icons8-телеграмма-app.svg" alt="telegramm"> <span>Telegramm</span>
+                </a>
+
+                <a href="tel:+79150000000">
+                    <img src="./icons/icons8-whatsapp.svg" alt="numberPhone">  <span>Номер тел.: 8 996-574-84-29</span>
+                </a>
+            </div>
+    
+            <div class="faqNoActive">
+    
+            </div>
+    
+
+            <!-- <div class="closePopUp">--- Закрыть ---</div> -->
+        </div>
+    </header>
+
+  
+
+    <main>  
+          <div class="container">
+            <section class="decoration">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </section>
+
+            <section class="mainSection">
+                <div class="descriptiom">
+                    <h1> Что из себя представляет этот онлайн сервис? </h1>
+
+
+                    <p>Это онлайн сервис который позволит вам проверить, 
+                        сможете ли вы получить оценку "автоматом" или вам придется 
+                        постараться чтобы получить оценку в зачетную книжку или дневник =)
+                    </p>
+
+
+                    <div class="selfTestNavigation">
+                        <p>Хотите себя проверить?</p>
+
+                        <div class="guide">
+                            <a href="#testYourselfBlock">Да, хочу</a>  
+                        </div>
+                    </div>
+                </div>
+
+
+                <a id="faqBlock"></a>
+                <div class="descriptiom">
+                    <h2> Как это работает </h2>
+                    <p> Онлайн сервис который предоставляет вам возможность проверки своей успеваемости. 
+                        <br>
+                        Для того чтобы проверить свои успехи нужно сделать следующее:
+                    </p>
+
+                    <ul>
+                        <li>Ввести название урока</li>
+                        <li>Ввести кол-во уроков (общее)</li>
+                        <li>Внести свои оценки</li>
+                        <li>Вписать кол-во пропусков, если они есть</li>
+                    </ul>
+
+                    <p> Восле проделаных действий, вам выдаст результат вашей возможности получения оценки автоматом</p>
+
+                </div>
+
+
+                <a id="testYourselfBlock"> </a>
+                <div class="checkingRating">
+                 
+                    <h2> Самопроверка </h2>
+
+                     <form>
+                        <div class="lessonName">
+                            <span>Название урока</span>
+                            <input type="text"  class="itemName"   placeholder="Введите название предмета">
+                        </div>
+                        <div class="numberLessons">
+                            <span>Количество уроков</span>
+                            <input type="number" class="numberLessonsInput" placeholder="Сколько всего уроков?" min="1">
+                            <div class="button"> Подтвердить </div>
+                        </div>
+
+                        <div class="forRating">
+                            
+                        </div>
+                        
+                        <h3> Пропуски </h3>
+                        <div class="omissions">
+                            
+                            <div class="noValidOmissions">
+                                <span>неуважительные</span>
+                                <input type="number" class="noValidOmissionsInput" placeholder="кол-во"  min="0">
+                            </div>
+                        </div>
+
+                        <div class="checkingButton"> Проверить </div>
+
+                    </form>
+
+
+                    <div class="inputRating">
+
+                    </div>
+
+                </div>
+               
+
+                
+
+                
+
+                
+
+            </section>
+            <section class="decoration">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </section>
+        </div>
+    </main>
+    
+   
+
+    <a href="#" class="buttonTopUp">  &uarr;  </a>
+
+    <footer>
+        <div class="container">
+            <p class="info"> Разработал Кулев Дмитрий <br> Для демонстрации своих навыков </p>
+            <p> p.s: На самом деле это не все что я могу, под конец работы я осознал что  допустил много ошибок и одну критическую</p>
+        </div>
+        
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/changeThemes.js"></script>
+    <script src="./js/counting.js"></script>
+  
+</body>
+</html>
